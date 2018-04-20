@@ -392,42 +392,36 @@ body {
     margin-top: -2px;
     background-image: url('../images/1/handle.png');
   }
-  .sld1 .s1 .light18,
-  .sld2 .s1 .light18 {
+  .sld1 .s1 .light18 {
     position: absolute;
     top: 90px;
     left: 50px;
     letter-spacing: 0.08em;
   }
-  .sld1 .s1 .title1,
-  .sld2 .s1 .title1 {
+  .sld1 .s1 .title1 {
     position: absolute;
     top: 115px;
     left: 50px;
     text-transform: uppercase;
   }
-  .sld1 .s1 .list,
-  .sld2 .s1 .list {
+  .sld1 .s1 .list {
     position: absolute;
     top: 240px;
     left: 65px;
     width: 270px;
     text-transform: uppercase;
   }
-  .sld1 .s1 .list .li1,
-  .sld2 .s1 .list .li1 {
+  .sld1 .s1 .list .li1 {
     position: absolute;
     top: 5px;
     left: 0;
   }
-  .sld1 .s1 .list .li2,
-  .sld2 .s1 .list .li2 {
+  .sld1 .s1 .list .li2 {
     position: absolute;
     top: 165px;
     left: 0;
   }
-  .sld1 .s1 .list .li3,
-  .sld2 .s1 .list .li3 {
+  .sld1 .s1 .list .li3 {
     position: absolute;
     top: 345px;
     left: 0;
@@ -455,7 +449,8 @@ body {
     cursor: pointer;
   }
 
-  .sld2 .s1 .lotion {
+  .sld1 .s1 .lotion {
+    display: none;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -463,292 +458,356 @@ body {
     height: 600px;
     background-image: url('../images/1/lotion.png');
   }
-  .sld2 .s1 .title2 {
+  .sld1 .s1 .title2 {
+    display: none;
     position: absolute;
     top: 42px;
     left: 50px;
     letter-spacing: 0.08em;
   }
-  .sld2 .s1 .title2 .light18 {
+  .sld1 .s1 .title2 .light18 {
     position: static;
     margin: 0;
     margin-top: 12px;
   }
 
+  .sld2 .text1,
+  .sld2 .text1,
   .sld3 .text1,
-  .sld3 .text1,
-  .sld4 .text1,
-  .sld5 .text1,
-  .sld5 .text1,
-  .sld7 .text1 {
+  .sld4 .text1 {
     position: absolute;
     top: 37px;
     left: 48px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
   }
+  .sld2 .s0 .text1 .light22,
   .sld3 .s0 .text1 .light22,
-  .sld4 .s0 .text1 .light22,
-  .sld5 .text1 .light22,
-  .sld5 .text1 .light22,
-  .sld7 .text1 .light22 {
+  .sld4 .text1 .light22 {
     color: #565656;
   }
   
+  .sld2 .s0 .text1 .light22,
   .sld3 .s0 .text1 .light22,
-  .sld4 .s0 .text1 .light22,
-  .sld5 .s0 .text1 .light22,
-  .sld5 .s0 .text1 .light22,
-  .sld7 .s0 .text1 .light22 {
+  .sld4 .s0 .text1 .light22 {
     margin-top: 16px;
   }
 
-  .sld3 .s0 {
-    background-image: url('../images/4/bg.jpg');
+  .sld2 .s0 {
+    background-image: url('../images/2/bg.jpg');
   }
-  .sld3 .s0 .list {
+  .sld2 .s0 .list {
     position: absolute;
-    top: 285px;
-    left: 390px;
-    width: 520px;
-  }
-  .sld3 .s0 .list li {
-    margin-bottom: 55px;
-    line-height: 1.2em;
+    top: 225px;
+    left: 285px;
+    width: 691px;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 1.5s;
+    transition-delay: 0.5s;
     letter-spacing: 0.07em;
   }
-  .sld3 .s0 .lotion {
+
+  .sld2 .s0 .list--animated {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .sld2 .s0 .list .item {
+    margin-bottom: 18px;
+    line-height: 32px;
+    color: #ffffff;
+    background-color: #7fc6aa;
+  }
+
+  .sld2 .s0 .list .item .bold16 {
+    padding-left: 21px;
+  }
+
+  .sld2 .s0 .list .item .sm-1 {
+    padding-left: 93px;
+  }
+
+  .sld2 .s0 .list .item .sm-2 {
+    padding-left: 62px;
+  }
+
+  .sld2 .s0 .list .item .sm-3 {
+    padding-left: 65px;
+  }
+
+  .sld2 .s0 .list .sub-list {
+    width: 100%;
+    height: 282px;
+    background-image: url('../images/2/list-bg.jpg');
+    background-position-y: -1px;
+    line-height: 1.2em;
+    color: #000000;
+  }
+
+  .sld2 .s0 .list .sub-list li {
+    padding-left: 21px;
+    padding-top: 30px;
+    padding-bottom: 15px;
+  }
+
+  .sld2 .s0 .lotion {
     position: absolute;
     top: 210px;
     left: -5px;
     width: 419px;
     height: 559px;
-    background-image: url('../images/4/lotion.png');
+    background-image: url('../images/2/lotion.png');
     animation-duration: 2s;
   }
 
-  .sld4 .s0 {
-    background-image: url('../images/5/bg.jpg');
+  .sld3 .s0 {
+    background-image: url('../images/3/bg.jpg');
   }
-  .sld4 .s0 .text1 .light18 {
+  .sld3 .s0 .text1 .light18 {
     line-height: 1.2em;
     margin-top: 15px;
   }
-  .sld4 .s0 .blocks {
+  .sld3 .s0 .blocks {
     position: absolute;
     top: 400px;
     left: 48px;
     width: 928px;
     height: 315px;
   }
-  .sld4 .s0 .blocks .block {
+  .sld3 .s0 .blocks .block {
     position: absolute;
     top: 0;
     text-align: center;
   }
-  .sld4 .s0 .blocks .block-1 {
+  .sld3 .s0 .blocks .block-1 {
     left: 0px;
   }
-  .sld4 .s0 .blocks .block-2 {
+  .sld3 .s0 .blocks .block-2 {
     left: 317px;
   }
-  .sld4 .s0 .blocks .block-3 {
+  .sld3 .s0 .blocks .block-3 {
     left: 650px;
   }
-  .sld4 .s0 .blocks .block .title{
+  .sld3 .s0 .blocks .block .title{
     transform: translateY(0);
     transition: 0.6s;
   }
-  .sld4 .s0 .blocks .label {
+  .sld3 .s0 .blocks .label {
     position: relative;
     height: 63px;
     margin-top: 10px;
     transition: 0.6s;
   }
-  .sld4 .s0 .blocks .label-1,
-  .sld4 .s0 .blocks .label-3 {
+  .sld3 .s0 .blocks .label-1,
+  .sld3 .s0 .blocks .label-3 {
     width: 279px;
-    background-image: url('../images/5/label-m.png');
+    background-image: url('../images/3/label-m.png');
   }
-  .sld4 .s0 .blocks .label-2 {
+  .sld3 .s0 .blocks .label-2 {
     width: 296px;
-    background-image: url('../images/5/label-b.png');
+    background-image: url('../images/3/label-b.png');
   }
-  .sld4 .s0 .blocks .label .sub {
+  .sld3 .s0 .blocks .label .sub {
     padding-top: 10px;
   }
-  .sld4 .s0 .blocks .block .arrow {
+  .sld3 .s0 .blocks .block .arrow {
     position: absolute;
     bottom: -31px;
     left: 114px;
     width: 62px;
     height: 62px;
-    background-image: url('../images/5/arrow.png');
+    background-image: url('../images/3/arrow.png');
     background-size: contain;
     cursor: pointer;
     transform: rotate(0);
     transition: 0.6s;
   }
-  .sld4 .s0 .blocks .block-wide .title {
+  .sld3 .s0 .blocks .block-wide .title {
     transform: translateY(-31px);
     transition: 0.6s;
   }
-  .sld4 .s0 .blocks .block-wide .label {
+  .sld3 .s0 .blocks .block-wide .label {
     transform: translateY(-31px);
     height: 258px;
     transition: 0.6s;
   }
-  .sld4 .s0 .blocks .block-wide .label-1,
-  .sld4 .s0 .blocks .block-wide .label-3 {
-    background-image: url('../images/5/label-1.png');
+  .sld3 .s0 .blocks .block-wide .label-1,
+  .sld3 .s0 .blocks .block-wide .label-3 {
+    background-image: url('../images/3/label-1.png');
   }
-  .sld4 .s0 .blocks .block-wide .label-2 {
-    background-image: url('../images/5/label-2.png');
+  .sld3 .s0 .blocks .block-wide .label-2 {
+    background-image: url('../images/3/label-2.png');
   }
-  .sld4 .s0 .blocks .block-wide .arrow {
+  .sld3 .s0 .blocks .block-wide .arrow {
     transform: rotate(180deg);
     transition: 0.6s;
   }
 
 
-  .sld5 .s0 {
-    background-image: url('../images/6/bg.jpg');
+  .sld4 .s0 {
+    background-image: url('../images/4/bg.jpg');
   }
-  .sld5 .text1 .light22,
-  .sld5 .text1 .light22 {
+  .sld4 .text1 .light22,
+  .sld4 .text1 .light22 {
     letter-spacing: 0.05em;
   }
-  .sld5 .s0 .items {
+  .sld4 .s0 .items {
     position: absolute;
     left: 48px;
     top: 185px;
     width: 928px;
     height: 450px;
   }
-  .sld5 .s0 .items .item {
+  .sld4 .s0 .items .item {
     position: absolute;
     top: 0;
     height: 454px;
   }
-  .sld5 .s0 .items .item-1{
+  .sld4 .s0 .items .item-1{
     width: 175px;
     left: 58px;
   }
-  .sld5 .s0 .items .item-2 {
+  .sld4 .s0 .items .item-2 {
     width: 180px;
     left: 370px;
   }
-  .sld5 .s0 .items .item-3 {
+  .sld4 .s0 .items .item-3 {
     width: 220px;
     left: 650px;
   }
-  .sld5 .s0 .item .title {
+  .sld4 .s0 .item .title {
     position: absolute;
     top: 0;
     left: 0;
     width: 200px;
     height: 60px;
   }
-  .sld5 .s0 .item-3 .title {
+  .sld4 .s0 .item-3 .title {
     left: 20px;
   }
-  .sld5 .s0 .item .title .number {
+  .sld4 .s0 .item .title .number {
     position: absolute;
     left: 0;
     top: 0;
     font-size: 72px;
     color: #a1a1a1;
   }
-  .sld5 .s0 .item .title .ttl-t {
+  .sld4 .s0 .item .title .ttl-t {
     position: absolute;
     letter-spacing: 0.12em;
   }
-  .sld5 .s0 .item-1 .title .ttl-t {
+  .sld4 .s0 .item-1 .title .ttl-t {
     left: 32px;
     top: 18px;
   }
-  .sld5 .s0 .item-2 .title .ttl-t {
+  .sld4 .s0 .item-2 .title .ttl-t {
     left: 48px;
     top: 25px;
   }
-  .sld5 .s0 .item-3 .title .ttl-t {
+  .sld4 .s0 .item-3 .title .ttl-t {
     left: 50px;
     top: 18px;
   }
-  .sld5 .s0 .items .item .image {
+  .sld4 .s0 .items .item .image {
     position: absolute;
+    z-index: 1;
   }
-  .sld5 .s0 .items .item-1 .image-1 {
+  .sld4 .s0 .items .item-1 .image-1 {
     left: 32px;
     top: 83px;
     width: 112px;
     height: 348px;
-    background-image: url('../images/6/green-bottle.png');
+    background-image: url('../images/4/green-bottle.png');
   }
-  .sld5 .s0 .items .item-2 .image-2 {
+  .sld4 .s0 .items .item-2 .image-2 {
     left: 46px;
     top: 130px;
     width: 92px;
     height: 305px;
-    background-image: url('../images/6/lotion.png');
+    background-image: url('../images/4/lotion.png');
   }
-  .sld5 .s0 .items .item-3 .image-3 {
+  .sld4 .s0 .items .item-3 .image-3 {
     left: 18px;
     top: 109px;
     width: 191px;
     height: 382px;
-    background-image: url('../images/6/black-bottles.png');
+    background-image: url('../images/4/black-bottles.png');
   }
-  .sld5 .s0 .items .item .text {
+  .sld4 .s0 .items .item .text {
     position: absolute;
     
     bottom: 0;
     text-align: center;
     white-space: nowrap;
   }
-  .sld5 .s0 .items .item-1 .text {
+  .sld4 .s0 .items .item-1 .text {
     left: 20px;
   }
-  .sld5 .s0 .items .item-2 .text {
+  .sld4 .s0 .items .item-2 .text {
     left: 9px;
   }
-  .sld5 .s0 .items .item-3 .text-l {
+  .sld4 .s0 .items .item-3 .text-l {
     left: 0px;
     text-align: right;
   }
-  .sld5 .s0 .items .item-3 .text-r {
+  .sld4 .s0 .items .item-3 .text-r {
     right: 0px;
     text-align: left;
   }
-  .sld5 .s0 .sub {
+  .sld4 .s0 .items .item .price {
+    position: absolute;
+    bottom: 80px;
+    left: 98px;
+    width: 95px;
+    height: 28px;
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: 1.5s;
+  }
+  .sld4 .s0 .items .item .price-1 {
+    background-image: url('../images/4/price-1.png');
+  }
+  .sld4 .s0 .items .item .price-2 {
+    background-image: url('../images/4/price-2.png');
+  }
+  .sld4 .s0 .items .item .price-3 {
+    left: 161px;
+    background-image: url('../images/4/price-3.png');
+  }
+  .sld4 .s0 .items .item .price-anim {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  .sld4 .s0 .sub {
     position: absolute;
     left: 48px;
     top: 673px;
     font-size: 12px;
   }
-  .sld5 .s0 .sub span {
+  .sld4 .s0 .sub span {
     padding-left: 8px;
   }
-  .sld5 .s0 .plus {
+  .sld4 .s0 .plus {
     position: absolute;
     top: 175px;
     right: 24px;
     width: 92px;
     height: 92px;
     z-index: 100;
-    background-image: url('../images/6/plus.png');
+    background-image: url('../images/4/plus.png');
     cursor: pointer;
   }
 
 
-  .sld5 .s1 {
+  .sld4 .s1 {
     display: none;
-    background-image: url('../images/6/bg2.jpg');
+    background-image: url('../images/4/bg2.jpg');
   }
-  .sld5 .text1 .light22 {
+  .sld4 .text1 .light22 {
     margin-top: 16px;
   }
-  .sld5 .s1 .head {
+  .sld4 .s1 .head {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -757,117 +816,150 @@ body {
     width: 928px;
     height: 70px;
   }
-  .sld5 .s1 .head .ttl {
+  .sld4 .s1 .head .ttl {
     position: relative;
     text-align: center;
     width: 454px;
   }
-  .sld5 .s1 .head .ttl .subttl {
+  .sld4 .s1 .head .ttl .subttl {
     margin-top: 28px;
   }
-  .sld5 .s1 .head .ttl .plus {
+  .sld4 .s1 .head .ttl .plus {
     position: absolute;
     top: -17px;
     right: 0;
     width: 52px;
     height: 52px;
-    background-image: url('../images/6/sm-plus.png');
+    background-image: url('../images/4/sm-plus.png');
     cursor: pointer;
   }
-  .sld5 .s1 .good {
+  .sld4 .s1 .good {
     position: absolute;
     top: 321px;
     height: 444px;
   }
-  .sld5 .s1 .good-1 {
+  .sld4 .s1 .good-1 {
     left: 113px;
     width: 380px;
   }
-  .sld5 .s1 .good-2 {
+  .sld4 .s1 .good-2 {
     left: 604px;
     width: 265px;
   }
-  .sld5 .s1 .good .img {
+  .sld4 .s1 .good .img {
     position: absolute;
     bottom: 0;
   }
-  .sld5 .s1 .good-1 .img {
+  .sld4 .s1 .good-1 .img {
     width: 151px;
     height: 401px;
-    background-image: url('../images/6/bottle-fluid.png');
+    background-image: url('../images/4/bottle-fluid.png');
   }
-  .sld5 .s1 .good-2 .img {
+  .sld4 .s1 .good-2 .img {
     width: 130px;
     height: 444px;
-    background-image: url('../images/6/bottle-3d.png');
+    background-image: url('../images/4/bottle-3d.png');
   }
-  .sld5 .s1 .good .list {
+  .sld4 .s1 .good .list {
     position: absolute;
     top: 55px;
     right: 0;
     transform: translateX(-100px);
     opacity: 0;
   }
-  .sld5 .s1 .good .list li {
+  .sld4 .s1 .good .list li {
     position: relative;
     margin-bottom: 26px;
   }
-  .sld5 .s1 .good .list li .tick,
-  .sld5 .s1-1 .good-item .list li .tick,
-  .sld5 .s1-2 .good-item .list li .tick {
+  .sld4 .s1 .good .list li .tick,
+  .sld4 .s1-1 .good-item .list li .tick,
+  .sld4 .s1-2 .good-item .list li .tick {
     position: absolute;
     top: 0;
     left: -30px;
     width: 25px;
     height: 24px;
-    background-image: url('../images/6/tick.png');
+    background-image: url('../images/4/tick.png');
   }
-  .sld5 .s1 .good .list-anim {
+  .sld4 .s1 .good .list-anim {
     transform: translateX(0);
     opacity: 1;
     transition: 1.5s;
   }
-  .sld5 .s1 .good .type {
+  .sld4 .s1 .good .type {
     position: absolute;
-    bottom: 70px;
+    bottom: 110px;
     white-space: nowrap;
   }
-  .sld5 .s1 .good-1 .type {
+  .sld4 .s1 .good-1 .type {
     left: 206px;
   }
-  .sld5 .s1 .good-2 .type {
+  .sld4 .s1 .good-2 .type {
     left: 190px;
   }
-  .sld5 .s1 .x,
-  .sld5 .s1-1 .x,
-  .sld5 .s1-2 .x {
+  .sld4 .s1 .tones {
+    position: absolute;
+    bottom: 44px;
+  }
+  .sld4 .s1 .tones-1 {
+    left: 242px;
+  }
+  .sld4 .s1 .tones-2 {
+    left: 715px;
+  }
+  .sld4 .s1 .tones li {
+    display: inline-flex;
+    width: 52px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .sld4 .s1  .tones li .tone-img {
+    width: 30px;
+    height: 30px;
+  }
+  .sld4 .s1 .tones .item1 .tone-img {
+    background-image: url('../images/4/tone-1.png');
+  }
+  .sld4 .s1 .tones .item2 .tone-img {
+    background-image: url('../images/4/tone-2.png');
+  }
+  .sld4 .s1 .tones .item3 .tone-img {
+    background-image: url('../images/4/tone-3.png');
+  }
+  .sld4 .s1 .tones .item4 .tone-img {
+    background-image: url('../images/4/tone-4.png');
+  }
+  .sld4 .s1 .x,
+  .sld4 .s1-1 .x,
+  .sld4 .s1-2 .x {
     position: absolute;
     top: 107px;
     right: 44px;
     width: 63px;
     height: 64px;
-    background-image: url('../images/6/x.png');
+    background-image: url('../images/4/x.png');
   }
 
 
-  .sld5 .s1-1 {
+  .sld4 .s1-1 {
     display: none;
-    background-image: url('../images/6/bg3.jpg');
+    background-image: url('../images/4/bg3.jpg');
   }
-  .sld5 .s1-1 .good-item {
+  .sld4 .s1-1 .good-item {
     position: absolute;
     left: 167px;
     top: 221px;
     width: 623px;
     height: 401px;
   }
-  .sld5 .s1-1 .good-item .img {
+  .sld4 .s1-1 .good-item .img {
     width: 175px;
     height: 541px;
-    background-image: url('../images/6/bottle-fluid-l.png');
+    background-image: url('../images/4/bottle-fluid-l.png');
     animation-duration: 1.5s;
   }
-  .sld5 .s1-1 .good-item .list {
+  .sld4 .s1-1 .good-item .list {
     position: absolute;
     right: 0;
     top: 26px;
@@ -875,45 +967,45 @@ body {
     transform: translateX(-100px);
     opacity: 0;
   }
-  .sld5 .s1-1 .good-item .list li {
+  .sld4 .s1-1 .good-item .list li {
     position: relative;
     margin-bottom: 28px;
   }
-  .sld5 .s1-1 .good-item .list li .tick {
+  .sld4 .s1-1 .good-item .list li .tick {
     left: -40px;
   }
-  .sld5 .s1-1 .good-item .list-anim {
+  .sld4 .s1-1 .good-item .list-anim {
     transform: translateX(0);
     opacity: 1;
     transition: 1.5s;
   }
-  .sld5 .s1-1 .result,
-  .sld5 .s1-2 .result {
+  .sld4 .s1-1 .result,
+  .sld4 .s1-2 .result {
     position: absolute;
     left: 48px;
     top: 665px;
     width: 334px;
     height: 56px;
   }
-  .sld5 .s1-1 .result .txt,
-  .sld5 .s1-2 .result .txt {
+  .sld4 .s1-1 .result .txt,
+  .sld4 .s1-2 .result .txt {
     position: absolute;
     top: 17px;
     right: 0;
     text-align: right;
     letter-spacing: 0.06em;
   }
-  .sld5 .s1-1 .result .plus,
-  .sld5 .s1-2 .result .plus {
+  .sld4 .s1-1 .result .plus,
+  .sld4 .s1-2 .result .plus {
     position: absolute;
     top: 0;
     left: 0;
     width: 52px;
     height: 52px;
-    background-image: url('../images/6/sm-plus.png');
+    background-image: url('../images/4/sm-plus.png');
     cursor: pointer;
   }
-  .sld5 .s1-1 .popup {
+  .sld4 .s1-1 .popup {
     display: none;
     position: absolute;
     left: 0;
@@ -921,9 +1013,9 @@ body {
     z-index: 100;
     width: 100%;
     height: 100%;
-    background-image: url('../images/6/popup1.png');
+    background-image: url('../images/4/popup1.png');
   }
-  .sld5 .s1-1 .popup .head {
+  .sld4 .s1-1 .popup .head {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -931,35 +1023,35 @@ body {
     top: 174px;
     width: 593px;
   }
-  .sld5 .s1-1 .popup .p-x {
+  .sld4 .s1-1 .popup .p-x {
     position: absolute;
     top: -22px;
     right: -139px;
     width: 63px;
     height: 64px;
-    background-image: url('../images/6/x.png');
+    background-image: url('../images/4/x.png');
     cursor: pointer;
   }
 
 
-  .sld5 .s1-2 {
+  .sld4 .s1-2 {
     display: none;
-    background-image: url('../images/6/bg4.jpg');
+    background-image: url('../images/4/bg4.jpg');
   }
-  .sld5 .s1-2 .good-item {
+  .sld4 .s1-2 .good-item {
     position: absolute;
     left: 160px;
     top: 187px;
     width: 623px;
     height: 571px;
   }
-  .sld5 .s1-2 .good-item .img {
+  .sld4 .s1-2 .good-item .img {
     width: 144px;
     height: 571px;
-    background-image: url('../images/6/bottle-3d-l.png');
+    background-image: url('../images/4/bottle-3d-l.png');
     animation-duration: 1.5s;
   }
-  .sld5 .s1-2 .good-item .list {
+  .sld4 .s1-2 .good-item .list {
     position: absolute;
     right: 0;
     top: 29px;
@@ -967,31 +1059,31 @@ body {
     transform: translateX(-100px);
     opacity: 0;
   }
-  .sld5 .s1-2 .good-item .list li {
+  .sld4 .s1-2 .good-item .list li {
     position: relative;
     margin-bottom: 29px;
     white-space: nowrap;
   }
-  .sld5 .s1-2 .good-item .list li .tick {
+  .sld4 .s1-2 .good-item .list li .tick {
     left: -40px;
   }
-  .sld5 .s1-2 .good-item .list li .plus-relief {
+  .sld4 .s1-2 .good-item .list li .plus-relief {
     position: absolute;
     top: -12px;
     right: -15px;
     width: 52px;
     height: 52px;
-    background-image: url('../images/6/sm-plus.png');
+    background-image: url('../images/4/sm-plus.png');
     cursor: pointer;
   }
-  .sld5 .s1-2 .good-item .list-anim {
+  .sld4 .s1-2 .good-item .list-anim {
     transform: translateX(0);
     opacity: 1;
     transition: 1.5s;
   }
 
-  .sld5 .s1-2 .popup-1,
-  .sld5 .s1-2 .popup-2 {
+  .sld4 .s1-2 .popup-1,
+  .sld4 .s1-2 .popup-2 {
     display: none;
     position: absolute;
     left: 0;
@@ -1001,34 +1093,34 @@ body {
     height: 100%;
     
   }
-  .sld5 .s1-2 .popup-1 {
-    background-image: url('../images/6/popup2.png');
+  .sld4 .s1-2 .popup-1 {
+    background-image: url('../images/4/popup2.png');
   }
-  .sld5 .s1-2 .popup-2 {
-    background-image: url('../images/6/popup3.png');
+  .sld4 .s1-2 .popup-2 {
+    background-image: url('../images/4/popup3.png');
   }
-  .sld5 .s1-2 .popup-1 .ttl {
+  .sld4 .s1-2 .popup-1 .ttl {
     position: absolute;
     left: 486px;
     top: 174px;
   }
-  .sld5 .s1-2 .popup-1 .p-x,
-  .sld5 .s1-2 .popup-2 .p-x {
+  .sld4 .s1-2 .popup-1 .p-x,
+  .sld4 .s1-2 .popup-2 .p-x {
     position: absolute;
     top: 150px;
     right: 65px;
     width: 63px;
     height: 64px;
-    background-image: url('../images/6/x.png');
+    background-image: url('../images/4/x.png');
     cursor: pointer;
   }
-  .sld5 .s1-2 .popup-2 .p-title {
+  .sld4 .s1-2 .popup-2 .p-title {
     position: absolute;
     left: 267px;
     top: 158px;
     letter-spacing: 0.07em;
   }
-  .sld5 .s1-2 .popup-2 .head {
+  .sld4 .s1-2 .popup-2 .head {
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -1036,152 +1128,21 @@ body {
     top: 192px;
     width: 748px;
   }
-  .sld5 .s1-2 .popup-2 .head .ttl {
+  .sld4 .s1-2 .popup-2 .head .ttl {
     text-align: center;
   }
-  .sld5 .s1-2 .popup-2 .foot {
+  .sld4 .s1-2 .popup-2 .foot {
     position: absolute;
     display: flex;
     justify-content: space-between;
     top: 600px;
     font-size: 14px;
   }
-  .sld5 .s1-2 .popup-2 .foot-1 {
+  .sld4 .s1-2 .popup-2 .foot-1 {
     left: 89px;
     width: 362px;
   }
-  .sld5 .s1-2 .popup-2 .foot-2 {
+  .sld4 .s1-2 .popup-2 .foot-2 {
     left: 575px;
     width: 367px;
-  }
-
-
-  .sld7 .s0 {
-    background-image: url('../images/7/bg.jpg');
-  }
-  .sld7 .s0 .block {
-    position: absolute;
-  }
-  .sld7 .s0 .block .title {
-    position: absolute;
-    top: 0;
-    font-size: 15px;
-    font-family: "Gilroy ExtraBold";
-    color: #565656;
-    letter-spacing: 0.11em;
-    text-align: center;
-    white-space: nowrap;
-  }
-  .sld7 .s0 .block .subtitle {
-    position: absolute;
-    bottom: 0;
-    font-size: 15px;
-    text-align: center;
-    white-space: nowrap;
-  }
-  .sld7 .s0 .block-1 {
-    left: 95px;
-    top: 325px;
-    width: 370px;
-    height: 64px;
-  }
-  .sld7 .s0 .block-1 .title {
-    left: 77px;
-  }
-  .sld7 .s0 .block-1 .subtitle-1 {
-    left: 0;
-  }
-  .sld7 .s0 .block-1 .subtitle-2 {
-    right: 0;
-  }
-
-  .sld7 .s0 .block-2 {
-    left: 65px;
-    top: 596px;
-    width: 185px;
-    height: 60px;
-  }
-  .sld7 .s0 .block-2 .title {
-    left: 0;
-  }
-  .sld7 .s0 .block-2 .subtitle {
-    left: 14px;
-  }
-
-  .sld7 .s0 .block-3 {
-    left: 303px;
-    top: 596px;
-    width: 153px;
-    height: 77px;
-  }
-  .sld7 .s0 .block-3 .title {
-    left: 3px;
-  }
-  .sld7 .s0 .block-3 .subtitle {
-    left: 0;
-  }
-
-  .sld7 .s0 .block-4 {
-    left: 522px;
-    top: 325px;
-    width: 217px;
-    height: 81px;
-  }
-  .sld7 .s0 .block-4 .title {
-    left: 45px;
-  }
-  .sld7 .s0 .block-4 .subtitle {
-    left: 0;
-  }
-
-  .sld7 .s0 .block-5 {
-    left: 762px;
-    top: 325px;
-    width: 209px;
-    height: 81px;
-  }
-  .sld7 .s0 .block-5 .title {
-    left: 0;
-  }
-  .sld7 .s0 .block-5 .subtitle {
-    left: 5px;
-  }
-
-  .sld7 .s0 .block-6 {
-    left: 512px;
-    top: 596px;
-    width: 160px;
-    height: 95px;
-  }
-  .sld7 .s0 .block-6 .title {
-    left: 27px;
-  }
-  .sld7 .s0 .block-6 .subtitle {
-    left: 0;
-  }
-
-  .sld7 .s0 .block-7 {
-    left: 699px;
-    top: 596px;
-    width: 106px;
-    height: 77px;
-  }
-  .sld7 .s0 .block-7 .title {
-    left: 15px;
-  }
-  .sld7 .s0 .block-7 .subtitle {
-    left: 0;
-  }
-
-  .sld7 .s0 .block-8 {
-    left: 846px;
-    top: 596px;
-    width: 128px;
-    height: 77px;
-  }
-  .sld7 .s0 .block-8 .title {
-    left: 17px;
-  }
-  .sld7 .s0 .block-8 .subtitle {
-    left: 0;
   }
