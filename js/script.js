@@ -61,26 +61,24 @@ $(document).ready(function() {
     })
 
     // slide4
-    $(".sld4 .s0 .items .item .price-1").addClass('price-anim');
-    $(".sld4 .s0 .items .item .price-2").addClass('price-anim');
-    $(".sld4 .s0 .items .item .price-3").addClass('price-anim');
 
-    $(".sld4 .s0 .plus").click(function () {
-        $(".sld4 .s0").fadeOut(500);
-        $(".main-m").fadeOut(500);
-        $(".sld4 .s1").fadeIn(500);
-        setTimeout(function () {
-            $(".sld4 .s1 .list").addClass('list-anim');
-        }, 300);
-    })
-    $(".sld4 .s1 .x").click(function () {
-        $(".sld4 .s1").fadeOut(500);
-        $(".main-m").fadeIn(500);
-        $(".sld4 .s0").fadeIn(500);
-        setTimeout(function () {
-            $(".sld4 .s1 .list").removeClass('list-anim');
-        }, 600);
-    })
+    // $(".sld4 .s0 .plus").click(function () {
+    //     $(".sld4 .s0").fadeOut(500);
+    //     $(".main-m").fadeOut(500);
+    //     $(".sld4 .s1").fadeIn(500);
+    //     setTimeout(function () {
+    //         $(".sld4 .s1 .list").addClass('list-anim');
+    //     }, 300);
+    // })
+    // $(".sld4 .s1 .x").click(function () {
+    //     $(".sld4 .s1").fadeOut(500);
+    //     $(".main-m").fadeIn(500);
+    //     $(".sld4 .s0").fadeIn(500);
+    //     setTimeout(function () {
+    //         $(".sld4 .s1 .list").removeClass('list-anim');
+    //     }, 600);
+    // })
+    $(".sld4 .s1 .list").addClass('list-anim');
     $(".sld4 .s1 .plus-fluid").click(function () {
         $(".sld4 .s1").fadeOut(500);
         $(".main-m").fadeOut(500);
@@ -144,4 +142,9 @@ $(document).ready(function() {
             $(".sld4 .s1-2 .list").removeClass('list-anim');
         }, 600);
     })
+
+    // slide5
+    $(".sld5 .s0 .items .item .price-1").addClass('price-anim');
+    $(".sld5 .s0 .items .item .price-2").addClass('price-anim');
+    $(".sld5 .s0 .items .item .price-3").addClass('price-anim');
 });

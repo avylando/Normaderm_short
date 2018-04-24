@@ -396,7 +396,7 @@ body {
     position: absolute;
     top: 90px;
     left: 50px;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
   }
   .sld1 .s1 .title1 {
     position: absolute;
@@ -474,7 +474,8 @@ body {
   .sld2 .text1,
   .sld2 .text1,
   .sld3 .text1,
-  .sld4 .text1 {
+  .sld4 .text1,
+  .sld5 .text1 {
     position: absolute;
     top: 37px;
     left: 48px;
@@ -483,13 +484,15 @@ body {
   }
   .sld2 .s0 .text1 .light22,
   .sld3 .s0 .text1 .light22,
-  .sld4 .text1 .light22 {
+  .sld4 .text1 .light22,
+  .sld5 .text1 .light22 {
     color: #565656;
   }
   
   .sld2 .s0 .text1 .light22,
   .sld3 .s0 .text1 .light22,
-  .sld4 .s0 .text1 .light22 {
+  .sld4 .s0 .text1 .light22,
+  .sld5 .s0 .text1 .light22  {
     margin-top: 16px;
   }
 
@@ -498,9 +501,9 @@ body {
   }
   .sld2 .s0 .list {
     position: absolute;
-    top: 225px;
-    left: 285px;
-    width: 691px;
+    top: 230px;
+    left: 225px;
+    width: 753px;
     opacity: 0;
     transform: translateX(-100px);
     transition: 1.5s;
@@ -514,49 +517,41 @@ body {
   }
 
   .sld2 .s0 .list .item {
-    margin-bottom: 18px;
-    line-height: 32px;
+    margin-bottom: 24px;
+    line-height: 46px;
     color: #ffffff;
     background-color: #7fc6aa;
   }
 
-  .sld2 .s0 .list .item .bold16 {
-    padding-left: 21px;
+  .sld2 .s0 .list .item .bold22 {
+    padding-left: 25px;
   }
 
-  .sld2 .s0 .list .item .sm-1 {
-    padding-left: 93px;
+  .sld2 .s0 .list .item .sm {
+    padding-left: 15px;
   }
 
-  .sld2 .s0 .list .item .sm-2 {
-    padding-left: 62px;
-  }
-
-  .sld2 .s0 .list .item .sm-3 {
-    padding-left: 65px;
-  }
 
   .sld2 .s0 .list .sub-list {
-    width: 100%;
-    height: 282px;
+    width: 753px;
+    height: 209px;
     background-image: url('../images/2/list-bg.jpg');
-    background-position-y: -1px;
     line-height: 1.2em;
     color: #000000;
   }
 
   .sld2 .s0 .list .sub-list li {
     padding-left: 21px;
-    padding-top: 30px;
+    padding-top: 26px;
     padding-bottom: 15px;
   }
 
   .sld2 .s0 .lotion {
     position: absolute;
     top: 210px;
-    left: -5px;
-    width: 419px;
-    height: 559px;
+    left: 55px;
+    width: 144px;
+    height: 450px;
     background-image: url('../images/2/lotion.png');
     animation-duration: 2s;
   }
@@ -567,6 +562,7 @@ body {
   .sld3 .s0 .text1 .light18 {
     line-height: 1.2em;
     margin-top: 15px;
+    letter-spacing: 1px;
   }
   .sld3 .s0 .blocks {
     position: absolute;
@@ -644,164 +640,7 @@ body {
     transition: 0.6s;
   }
 
-
-  .sld4 .s0 {
-    background-image: url('../images/4/bg.jpg');
-  }
-  .sld4 .text1 .light22,
-  .sld4 .text1 .light22 {
-    letter-spacing: 0.05em;
-  }
-  .sld4 .s0 .items {
-    position: absolute;
-    left: 48px;
-    top: 185px;
-    width: 928px;
-    height: 450px;
-  }
-  .sld4 .s0 .items .item {
-    position: absolute;
-    top: 0;
-    height: 454px;
-  }
-  .sld4 .s0 .items .item-1{
-    width: 175px;
-    left: 58px;
-  }
-  .sld4 .s0 .items .item-2 {
-    width: 180px;
-    left: 370px;
-  }
-  .sld4 .s0 .items .item-3 {
-    width: 220px;
-    left: 650px;
-  }
-  .sld4 .s0 .item .title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    height: 60px;
-  }
-  .sld4 .s0 .item-3 .title {
-    left: 20px;
-  }
-  .sld4 .s0 .item .title .number {
-    position: absolute;
-    left: 0;
-    top: 0;
-    font-size: 72px;
-    color: #a1a1a1;
-  }
-  .sld4 .s0 .item .title .ttl-t {
-    position: absolute;
-    letter-spacing: 0.12em;
-  }
-  .sld4 .s0 .item-1 .title .ttl-t {
-    left: 32px;
-    top: 18px;
-  }
-  .sld4 .s0 .item-2 .title .ttl-t {
-    left: 48px;
-    top: 25px;
-  }
-  .sld4 .s0 .item-3 .title .ttl-t {
-    left: 50px;
-    top: 18px;
-  }
-  .sld4 .s0 .items .item .image {
-    position: absolute;
-    z-index: 1;
-  }
-  .sld4 .s0 .items .item-1 .image-1 {
-    left: 32px;
-    top: 83px;
-    width: 112px;
-    height: 348px;
-    background-image: url('../images/4/green-bottle.png');
-  }
-  .sld4 .s0 .items .item-2 .image-2 {
-    left: 46px;
-    top: 130px;
-    width: 92px;
-    height: 305px;
-    background-image: url('../images/4/lotion.png');
-  }
-  .sld4 .s0 .items .item-3 .image-3 {
-    left: 18px;
-    top: 109px;
-    width: 191px;
-    height: 382px;
-    background-image: url('../images/4/black-bottles.png');
-  }
-  .sld4 .s0 .items .item .text {
-    position: absolute;
-    
-    bottom: 0;
-    text-align: center;
-    white-space: nowrap;
-  }
-  .sld4 .s0 .items .item-1 .text {
-    left: 20px;
-  }
-  .sld4 .s0 .items .item-2 .text {
-    left: 9px;
-  }
-  .sld4 .s0 .items .item-3 .text-l {
-    left: 0px;
-    text-align: right;
-  }
-  .sld4 .s0 .items .item-3 .text-r {
-    right: 0px;
-    text-align: left;
-  }
-  .sld4 .s0 .items .item .price {
-    position: absolute;
-    bottom: 80px;
-    left: 98px;
-    width: 95px;
-    height: 28px;
-    transform: translateX(-50px);
-    opacity: 0;
-    transition: 1.5s;
-  }
-  .sld4 .s0 .items .item .price-1 {
-    background-image: url('../images/4/price-1.png');
-  }
-  .sld4 .s0 .items .item .price-2 {
-    background-image: url('../images/4/price-2.png');
-  }
-  .sld4 .s0 .items .item .price-3 {
-    left: 161px;
-    background-image: url('../images/4/price-3.png');
-  }
-  .sld4 .s0 .items .item .price-anim {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-  .sld4 .s0 .sub {
-    position: absolute;
-    left: 48px;
-    top: 673px;
-    font-size: 12px;
-  }
-  .sld4 .s0 .sub span {
-    padding-left: 8px;
-  }
-  .sld4 .s0 .plus {
-    position: absolute;
-    top: 175px;
-    right: 24px;
-    width: 92px;
-    height: 92px;
-    z-index: 100;
-    background-image: url('../images/4/plus.png');
-    cursor: pointer;
-  }
-
-
   .sld4 .s1 {
-    display: none;
     background-image: url('../images/4/bg2.jpg');
   }
   .sld4 .text1 .light22 {
@@ -1145,4 +984,147 @@ body {
   .sld4 .s1-2 .popup-2 .foot-2 {
     left: 575px;
     width: 367px;
+  }
+
+
+  .sld5 .s0 {
+    background-image: url('../images/5/bg.jpg');
+  }
+  .sld5 .text1 .light22 {
+    letter-spacing: 0.05em;
+  }
+  .sld5 .s0 .items {
+    position: absolute;
+    left: 48px;
+    top: 185px;
+    width: 928px;
+    height: 450px;
+  }
+  .sld5 .s0 .items .item {
+    position: absolute;
+    top: 0;
+    height: 454px;
+  }
+  .sld5 .s0 .items .item-1{
+    width: 175px;
+    left: 58px;
+  }
+  .sld5 .s0 .items .item-2 {
+    width: 180px;
+    left: 370px;
+  }
+  .sld5 .s0 .items .item-3 {
+    width: 220px;
+    left: 650px;
+  }
+  .sld5 .s0 .item .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 60px;
+  }
+  .sld5 .s0 .item-3 .title {
+    left: 20px;
+  }
+  .sld5 .s0 .item .title .number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 72px;
+    color: #a1a1a1;
+  }
+  .sld5 .s0 .item .title .ttl-t {
+    position: absolute;
+    letter-spacing: 0.12em;
+  }
+  .sld5 .s0 .item-1 .title .ttl-t {
+    left: 32px;
+    top: 18px;
+  }
+  .sld5 .s0 .item-2 .title .ttl-t {
+    left: 48px;
+    top: 25px;
+  }
+  .sld5 .s0 .item-3 .title .ttl-t {
+    left: 50px;
+    top: 18px;
+  }
+  .sld5 .s0 .items .item .image {
+    position: absolute;
+    z-index: 1;
+  }
+  .sld5 .s0 .items .item-1 .image-1 {
+    left: 32px;
+    top: 83px;
+    width: 112px;
+    height: 348px;
+    background-image: url('../images/5/green-bottle.png');
+  }
+  .sld5 .s0 .items .item-2 .image-2 {
+    left: 46px;
+    top: 130px;
+    width: 92px;
+    height: 305px;
+    background-image: url('../images/5/lotion.png');
+  }
+  .sld5 .s0 .items .item-3 .image-3 {
+    left: 18px;
+    top: 109px;
+    width: 191px;
+    height: 382px;
+    background-image: url('../images/5/black-bottles.png');
+  }
+  .sld5 .s0 .items .item .text {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .sld5 .s0 .items .item-1 .text {
+    left: 20px;
+  }
+  .sld5 .s0 .items .item-2 .text {
+    left: 9px;
+  }
+  .sld5 .s0 .items .item-3 .text-l {
+    left: 0px;
+    text-align: right;
+  }
+  .sld5 .s0 .items .item-3 .text-r {
+    right: 0px;
+    text-align: left;
+  }
+  .sld5 .s0 .items .item .price {
+    position: absolute;
+    bottom: 80px;
+    left: 98px;
+    width: 95px;
+    height: 28px;
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: 1.5s;
+  }
+  .sld5 .s0 .items .item .price-1 {
+    background-image: url('../images/5/price-1.png');
+  }
+  .sld5 .s0 .items .item .price-2 {
+    background-image: url('../images/5/price-2.png');
+  }
+  .sld5 .s0 .items .item .price-3 {
+    left: 161px;
+    background-image: url('../images/5/price-3.png');
+  }
+  .sld5 .s0 .items .item .price-anim {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  .sld5 .s0 .sub {
+    position: absolute;
+    left: 48px;
+    top: 673px;
+    font-size: 12px;
+  }
+  .sld5 .s0 .sub span {
+    padding-left: 8px;
   }
