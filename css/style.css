@@ -474,8 +474,7 @@ body {
   .sld2 .text1,
   .sld2 .text1,
   .sld3 .text1,
-  .sld4 .text1,
-  .sld5 .text1 {
+  .sld4 .text1{
     position: absolute;
     top: 37px;
     left: 48px;
@@ -484,15 +483,13 @@ body {
   }
   .sld2 .s0 .text1 .light22,
   .sld3 .s0 .text1 .light22,
-  .sld4 .text1 .light22,
-  .sld5 .text1 .light22 {
+  .sld4 .text1 .light22{
     color: #565656;
   }
   
   .sld2 .s0 .text1 .light22,
   .sld3 .s0 .text1 .light22,
-  .sld4 .s0 .text1 .light22,
-  .sld5 .s0 .text1 .light22  {
+  .sld4 .s0 .text1 .light22  {
     margin-top: 16px;
   }
 
@@ -556,90 +553,6 @@ body {
     animation-duration: 2s;
   }
 
-  .sld3 .s0 {
-    background-image: url('../images/3/bg.jpg');
-  }
-  .sld3 .s0 .text1 .light18 {
-    line-height: 1.2em;
-    margin-top: 15px;
-    letter-spacing: 1px;
-  }
-  .sld3 .s0 .blocks {
-    position: absolute;
-    top: 400px;
-    left: 48px;
-    width: 928px;
-    height: 315px;
-  }
-  .sld3 .s0 .blocks .block {
-    position: absolute;
-    top: 0;
-    text-align: center;
-  }
-  .sld3 .s0 .blocks .block-1 {
-    left: 0px;
-  }
-  .sld3 .s0 .blocks .block-2 {
-    left: 317px;
-  }
-  .sld3 .s0 .blocks .block-3 {
-    left: 650px;
-  }
-  .sld3 .s0 .blocks .block .title{
-    transform: translateY(0);
-    transition: 0.6s;
-  }
-  .sld3 .s0 .blocks .label {
-    position: relative;
-    height: 63px;
-    margin-top: 10px;
-    transition: 0.6s;
-  }
-  .sld3 .s0 .blocks .label-1,
-  .sld3 .s0 .blocks .label-3 {
-    width: 279px;
-    background-image: url('../images/3/label-m.png');
-  }
-  .sld3 .s0 .blocks .label-2 {
-    width: 296px;
-    background-image: url('../images/3/label-b.png');
-  }
-  .sld3 .s0 .blocks .label .sub {
-    padding-top: 10px;
-  }
-  .sld3 .s0 .blocks .block .arrow {
-    position: absolute;
-    bottom: -31px;
-    left: 114px;
-    width: 62px;
-    height: 62px;
-    background-image: url('../images/3/arrow.png');
-    background-size: contain;
-    cursor: pointer;
-    transform: rotate(0);
-    transition: 0.6s;
-  }
-  .sld3 .s0 .blocks .block-wide .title {
-    transform: translateY(-31px);
-    transition: 0.6s;
-  }
-  .sld3 .s0 .blocks .block-wide .label {
-    transform: translateY(-31px);
-    height: 258px;
-    transition: 0.6s;
-  }
-  .sld3 .s0 .blocks .block-wide .label-1,
-  .sld3 .s0 .blocks .block-wide .label-3 {
-    background-image: url('../images/3/label-1.png');
-  }
-  .sld3 .s0 .blocks .block-wide .label-2 {
-    background-image: url('../images/3/label-2.png');
-  }
-  .sld3 .s0 .blocks .block-wide .arrow {
-    transform: rotate(180deg);
-    transition: 0.6s;
-  }
-
   .sld4 .s1 {
     background-image: url('../images/4/bg2.jpg');
   }
@@ -685,9 +598,28 @@ body {
     left: 604px;
     width: 265px;
   }
+  .sld4 .s1 .good .spot {
+    position: absolute;
+    z-index: 1;
+  }
+  .sld4 .s1 .good-1 .spot {
+    top: 5px;
+    left: -98px;
+    width: 235px;
+    height: 330px;
+    background-image: url('../images/4/spot-f.png');
+  }
+  .sld4 .s1 .good-2 .spot {
+    top: -24px;
+    left: -64px;
+    width: 216px;
+    height: 357px;
+    background-image: url('../images/4/spot-3d.png');
+  }
   .sld4 .s1 .good .img {
     position: absolute;
     bottom: 0;
+    z-index: 2;
   }
   .sld4 .s1 .good-1 .img {
     width: 151px;
@@ -700,8 +632,25 @@ body {
     background-image: url('../images/4/bottle-3d.png');
   }
   .sld4 .s1 .good .list {
+    box-sizing: border-box;
     position: absolute;
-    top: 55px;
+    top: 45px;
+    left: 100px;
+    width: 266px;
+    padding-left: 100px;
+    padding-top: 11px;
+    transform: translateX(-100px);
+    opacity: 0;
+    z-index: 0;
+  }
+  .sld4 .s1 .good .list-l {
+    height: 215px;
+    background-image: url('../images/4/list-left-bg.png');
+    right: 0;
+  }
+  .sld4 .s1 .good .list-r {
+    height: 88px;
+    background-image: url('../images/4/list-right-bg.png');
     right: 0;
     transform: translateX(-100px);
     opacity: 0;
@@ -709,6 +658,9 @@ body {
   .sld4 .s1 .good .list li {
     position: relative;
     margin-bottom: 26px;
+  }
+  .sld4 .s1 .good .list li .adv {
+    white-space: nowrap;
   }
   .sld4 .s1 .good .list li .tick,
   .sld4 .s1-1 .good-item .list li .tick,
@@ -740,10 +692,10 @@ body {
     position: absolute;
     bottom: 44px;
   }
-  .sld4 .s1 .tones-1 {
+  .sld4 .s1 .tones-l {
     left: 242px;
   }
-  .sld4 .s1 .tones-2 {
+  .sld4 .s1 .tones-r {
     left: 715px;
   }
   .sld4 .s1 .tones li {
@@ -757,17 +709,29 @@ body {
     width: 30px;
     height: 30px;
   }
-  .sld4 .s1 .tones .item1 .tone-img {
+  .sld4 .s1 .tones-l .item1 .tone-img {
     background-image: url('../images/4/tone-1.png');
   }
-  .sld4 .s1 .tones .item2 .tone-img {
+  .sld4 .s1 .tones-l .item2 .tone-img {
     background-image: url('../images/4/tone-2.png');
   }
-  .sld4 .s1 .tones .item3 .tone-img {
+  .sld4 .s1 .tones-l .item3 .tone-img {
     background-image: url('../images/4/tone-3.png');
   }
-  .sld4 .s1 .tones .item4 .tone-img {
+  .sld4 .s1 .tones-l .item4 .tone-img {
     background-image: url('../images/4/tone-4.png');
+  }
+  .sld4 .s1 .tones-r .item1 .tone-img {
+    background-image: url('../images/4/tone-1-r.png');
+  }
+  .sld4 .s1 .tones-r .item2 .tone-img {
+    background-image: url('../images/4/tone-2-r.png');
+  }
+  .sld4 .s1 .tones-r .item3 .tone-img {
+    background-image: url('../images/4/tone-3-r.png');
+  }
+  .sld4 .s1 .tones-r .item4 .tone-img {
+    background-image: url('../images/4/tone-4-r.png');
   }
   .sld4 .s1 .x,
   .sld4 .s1-1 .x,
@@ -793,16 +757,25 @@ body {
     height: 401px;
   }
   .sld4 .s1-1 .good-item .img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
     width: 175px;
     height: 541px;
     background-image: url('../images/4/bottle-fluid-l.png');
     animation-duration: 1.5s;
   }
   .sld4 .s1-1 .good-item .list {
+    box-sizing: border-box;
     position: absolute;
-    right: 0;
-    top: 26px;
-    width: 379px;
+    left: 135px;
+    top: 11px;
+    width: 664px;
+    height: 361px;
+    padding-left: 90px;
+    padding-top: 14px;
+    background-image: url('../images/4/list-f-bg.png');
     transform: translateX(-100px);
     opacity: 0;
   }
@@ -884,19 +857,38 @@ body {
     width: 623px;
     height: 571px;
   }
+  .sld4 .s1-2 .good-item .spot {
+    position: absolute;
+    top: -26px;
+    left: -72px;
+    width: 240px;
+    height: 397px;
+    background-image: url('../images/4/spot-3d-big.png');
+    z-index: 1;
+  }
   .sld4 .s1-2 .good-item .img {
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 144px;
     height: 571px;
     background-image: url('../images/4/bottle-3d-l.png');
     animation-duration: 1.5s;
+    z-index: 1;
   }
   .sld4 .s1-2 .good-item .list {
+    box-sizing: border-box;
     position: absolute;
-    right: 0;
-    top: 29px;
-    width: 379px;
+    left: 115px;
+    top: 19px;
+    width: 664px;
+    height: 391px;
+    padding-left: 130px;
+    padding-top: 11px;
+    background-image: url('../images/4/list-3d-bg.png');
     transform: translateX(-100px);
     opacity: 0;
+    z-index: 0;
   }
   .sld4 .s1-2 .good-item .list li {
     position: relative;
@@ -909,7 +901,7 @@ body {
   .sld4 .s1-2 .good-item .list li .plus-relief {
     position: absolute;
     top: -12px;
-    right: -15px;
+    right: 135px;
     width: 52px;
     height: 52px;
     background-image: url('../images/4/sm-plus.png');
@@ -987,115 +979,115 @@ body {
   }
 
 
-  .sld5 .s0 {
-    background-image: url('../images/5/bg.jpg');
+  .sld3 .s0 {
+    background-image: url('../images/3/bg.jpg');
   }
-  .sld5 .text1 .light22 {
+  .sld3 .text1 .light22 {
     letter-spacing: 0.05em;
   }
-  .sld5 .s0 .items {
+  .sld3 .s0 .items {
     position: absolute;
     left: 48px;
     top: 185px;
     width: 928px;
     height: 450px;
   }
-  .sld5 .s0 .items .item {
+  .sld3 .s0 .items .item {
     position: absolute;
     top: 0;
     height: 454px;
   }
-  .sld5 .s0 .items .item-1{
+  .sld3 .s0 .items .item-1{
     width: 175px;
     left: 58px;
   }
-  .sld5 .s0 .items .item-2 {
+  .sld3 .s0 .items .item-2 {
     width: 180px;
     left: 370px;
   }
-  .sld5 .s0 .items .item-3 {
+  .sld3 .s0 .items .item-3 {
     width: 220px;
     left: 650px;
   }
-  .sld5 .s0 .item .title {
+  .sld3 .s0 .item .title {
     position: absolute;
     top: 0;
     left: 0;
     width: 200px;
     height: 60px;
   }
-  .sld5 .s0 .item-3 .title {
+  .sld3 .s0 .item-3 .title {
     left: 20px;
   }
-  .sld5 .s0 .item .title .number {
+  .sld3 .s0 .item .title .number {
     position: absolute;
     left: 0;
     top: 0;
     font-size: 72px;
     color: #a1a1a1;
   }
-  .sld5 .s0 .item .title .ttl-t {
+  .sld3 .s0 .item .title .ttl-t {
     position: absolute;
     letter-spacing: 0.12em;
   }
-  .sld5 .s0 .item-1 .title .ttl-t {
+  .sld3 .s0 .item-1 .title .ttl-t {
     left: 32px;
     top: 18px;
   }
-  .sld5 .s0 .item-2 .title .ttl-t {
+  .sld3 .s0 .item-2 .title .ttl-t {
     left: 48px;
     top: 25px;
   }
-  .sld5 .s0 .item-3 .title .ttl-t {
+  .sld3 .s0 .item-3 .title .ttl-t {
     left: 50px;
     top: 18px;
   }
-  .sld5 .s0 .items .item .image {
+  .sld3 .s0 .items .item .image {
     position: absolute;
     z-index: 1;
   }
-  .sld5 .s0 .items .item-1 .image-1 {
+  .sld3 .s0 .items .item-1 .image-1 {
     left: 32px;
     top: 83px;
     width: 112px;
     height: 348px;
-    background-image: url('../images/5/green-bottle.png');
+    background-image: url('../images/3/green-bottle.png');
   }
-  .sld5 .s0 .items .item-2 .image-2 {
+  .sld3 .s0 .items .item-2 .image-2 {
     left: 46px;
     top: 130px;
     width: 92px;
     height: 305px;
-    background-image: url('../images/5/lotion.png');
+    background-image: url('../images/3/lotion.png');
   }
-  .sld5 .s0 .items .item-3 .image-3 {
+  .sld3 .s0 .items .item-3 .image-3 {
     left: 18px;
     top: 109px;
     width: 191px;
     height: 382px;
-    background-image: url('../images/5/black-bottles.png');
+    background-image: url('../images/3/black-bottles.png');
   }
-  .sld5 .s0 .items .item .text {
+  .sld3 .s0 .items .item .text {
     position: absolute;
     bottom: 0;
     text-align: center;
     white-space: nowrap;
   }
-  .sld5 .s0 .items .item-1 .text {
+  .sld3 .s0 .items .item-1 .text {
     left: 20px;
   }
-  .sld5 .s0 .items .item-2 .text {
+  .sld3 .s0 .items .item-2 .text {
     left: 9px;
   }
-  .sld5 .s0 .items .item-3 .text-l {
+  .sld3 .s0 .items .item-3 .text-l {
     left: 0px;
     text-align: right;
   }
-  .sld5 .s0 .items .item-3 .text-r {
+  .sld3 .s0 .items .item-3 .text-r {
     right: 0px;
     text-align: left;
   }
-  .sld5 .s0 .items .item .price {
+  .sld3 .s0 .items .item .price {
     position: absolute;
     bottom: 80px;
     left: 98px;
@@ -1105,26 +1097,26 @@ body {
     opacity: 0;
     transition: 1.5s;
   }
-  .sld5 .s0 .items .item .price-1 {
-    background-image: url('../images/5/price-1.png');
+  .sld3 .s0 .items .item .price-1 {
+    background-image: url('../images/3/price-1.png');
   }
-  .sld5 .s0 .items .item .price-2 {
-    background-image: url('../images/5/price-2.png');
+  .sld3 .s0 .items .item .price-2 {
+    background-image: url('../images/3/price-2.png');
   }
-  .sld5 .s0 .items .item .price-3 {
+  .sld3 .s0 .items .item .price-3 {
     left: 161px;
-    background-image: url('../images/5/price-3.png');
+    background-image: url('../images/3/price-3.png');
   }
-  .sld5 .s0 .items .item .price-anim {
+  .sld3 .s0 .items .item .price-anim {
     opacity: 1;
     transform: translateX(0px);
   }
-  .sld5 .s0 .sub {
+  .sld3 .s0 .sub {
     position: absolute;
     left: 48px;
     top: 673px;
     font-size: 12px;
   }
-  .sld5 .s0 .sub span {
+  .sld3 .s0 .sub span {
     padding-left: 8px;
   }

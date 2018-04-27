@@ -45,20 +45,14 @@ $(document).ready(function() {
     });
 
 
-    // slide3
+    // slide2
     $(".sld2 .s0 .lotion").addClass('animated zoomIn');
     $(".sld2 .s0 .list").addClass('list--animated');
 
-    //slide3
-    $(".sld3 .s0 .block-1 .arrow").click(function () {
-        $(".sld3 .s0 .block-1").toggleClass('block-wide');
-    })
-    $(".sld3 .s0 .block-2 .arrow").click(function () {
-        $(".sld3 .s0 .block-2").toggleClass('block-wide');
-    })
-    $(".sld3 .s0 .block-3 .arrow").click(function () {
-        $(".sld3 .s0 .block-3").toggleClass('block-wide');
-    })
+    // slide3
+    $(".sld3 .s0 .items .item .price-1").addClass('price-anim');
+    $(".sld3 .s0 .items .item .price-2").addClass('price-anim');
+    $(".sld3 .s0 .items .item .price-3").addClass('price-anim');
 
     // slide4
 
@@ -142,9 +136,4 @@ $(document).ready(function() {
             $(".sld4 .s1-2 .list").removeClass('list-anim');
         }, 600);
     })
-
-    // slide5
-    $(".sld5 .s0 .items .item .price-1").addClass('price-anim');
-    $(".sld5 .s0 .items .item .price-2").addClass('price-anim');
-    $(".sld5 .s0 .items .item .price-3").addClass('price-anim');
 });
